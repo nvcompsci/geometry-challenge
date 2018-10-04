@@ -23,12 +23,13 @@
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
     var x = 10;
-    var y = 200;
+    var y =  10;
     var size = 50;
     ctx.fillStyle = "red";
     for (var i = 0; i < 10; i++) {
         ctx.fillRect(x,y,size,size);
         x += 60;
+        y += 60;
     }
 </script>
 </body>
