@@ -24,18 +24,19 @@
     var ctx = canvas.getContext("2d");
     var x = 10;
     var y =  10;
-    var size = 50;
+    var size = 200;
     ctx.fillStyle = "red";
-    for (var r = 0; r < 10; r++) {
-        for (var c = 0; c < 10; c++) {
-            ctx.fillRect(x,y,size,size);
-            x += 60;
-            size -= 5;
-            y += 2.5;
+    for (var i = 0; i < 10; i++) {
+        if (i % 3 == 0) {
+            ctx.fillStyle = "blue";
         }
-        y += 60;
-        x = 10;
-        size = 50;
+        else {
+            ctx.fillStyle = "red";
+        }
+        ctx.fillRect(x,y,size,size);
+        size -= 10;
+        x += 5;
+        y += 5;
     }
 </script>
 </body>
